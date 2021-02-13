@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Live Project [Tata Insurance Challengue](https://damaged-money.surge.sh/).
+Live Project [Tata Insurance Challengue](https://acid-belief.surge.sh/).
 
 ## Available Scripts
 
