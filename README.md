@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+Project developed using React(Typescript), SASS/SCSS, BEM, Design tokens, ESLint and Prettier
+
+!['screen-laptop.png'](screen-laptop.png)
+
 Live Project [Tata Insurance Challengue](https://acid-belief.surge.sh/).
 
 ## Available Scripts
