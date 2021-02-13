@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 *:after,
 *:before,
@@ -11,9 +11,22 @@ html {
   padding: 0;
 }
 
-
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #fff;
+  color: var(--colors-font-base);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.d__block {
+  display: block;
+}
+
+.column__complete {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

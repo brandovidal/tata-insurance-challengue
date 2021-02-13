@@ -1,0 +1,22 @@
+.dropdown {
+  display: inline-block;
+  position: relative; }
+
+.dropdown .icon {
+  position: absolute;
+  right: 1px;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.dropdown__select {
+  border: 1px solid var(--colors-blue-700);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 20px;
+  color: var(--color-font-base);
+  background: var(--color-transparent);
+  height: 50px; }
+
+.dropdown__select:focus {
+  background-color: var(---colors-transparent);
+  outline: none; }

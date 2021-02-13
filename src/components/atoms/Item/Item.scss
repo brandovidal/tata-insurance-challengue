@@ -1,0 +1,10 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+.item__text {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-light);
+  // color: var(--colors-font-highlight);
+}

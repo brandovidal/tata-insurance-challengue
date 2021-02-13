@@ -1,0 +1,19 @@
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms ease all;
+}
+.input-group__complete {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.input-group__label {
+  position: absolute;
+  padding: 10px;
+}
+.input-group__error {
+  padding: 5px 0;
+  color: var(--colors-danger);
+  display: none;
+}

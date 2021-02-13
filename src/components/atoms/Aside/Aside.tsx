@@ -1,37 +1,56 @@
 import React from 'react'
+import { Item, ItemProps } from '../Item'
+import Picture from '../Picture'
+
+import './Aside.scss'
 
 type AsideProps = {
   title?: string
   subtitle?: string
+  listing?: ItemProps[]
 }
 
-const Aside: React.FC<AsideProps> = ({ title, subtitle }) => (
-  <aside className="aside">
+const background = {
+  src: '/utils/sidebar.png',
+  width: '100%',
+}
+
+const shadow = {
+  src: '/utils/shadow.png',
+  width: 'lg',
+}
+
+const Aside: React.FC<AsideProps> = ({ title, subtitle, listing }) => (
+  <aside
+    className="aside"
+    style={{
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'right bottom',
+      backgroundSize: 'cover',
+      background: '#2f80ed',
+    }}
+  >
     <div className="aside__content">
-      <h1 className="aside__title">
-        <span className="aside__font--light">{title}</span>
-        <b className="aside__font--bold">{subtitle}</b>
-      </h1>
-      <ul className="aside__listing">
-        <li className="aside__listing">
-          <img src="/home/shield.png" alt="" />
-          Compralo de manera facil y rapida
-        </li>
-        <li>
-          <img src="/home/mobile.png" alt="" />
-          Cotiza y compra tu seguro 1005 digital
-        </li>
-        <li>
-          <img src="/home/shield.png" alt="" />
-          hasta S/. 12 millones de cobertura anual
-        </li>
-        <li>
-          <img src="/home/shield.png" alt="" />
-          Mas de 300 clinicas en todo el Peru
-        </li>
-      </ul>
+      <div className="aside__heading">
+        <h1 className="aside__title">
+          <span className="aside__font--light">{title}</span>
+          <b className="aside__font--bold">{subtitle}</b>
+        </h1>
+        <ul className="aside__listing">
+          {listing?.map(({ id, src, text, size }) => (
+            <Item key={id} id={id} src={src} text={text} size={size} />
+          ))}
+        </ul>
+      </div>
+      <p className="aside__copy">&copy; 2021 RIMAC Seguros y Reaseguros</p>
     </div>
-    <p className="copy">&copy; 2021 y Company</p>
+
+    <div className="aside__img">
+      <Picture src={background.src} width={background.width} />
+    </div>
+    <div className="aside__shadow">
+      <Picture src={shadow.src} width={shadow.width} />
+    </div>
   </aside>
 )
 

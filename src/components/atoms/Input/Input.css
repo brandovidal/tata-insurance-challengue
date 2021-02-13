@@ -1,0 +1,25 @@
+.input {
+  border: 1px solid var(--colors-primary-highlight);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 17px;
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  height: 50px;
+  transition: 300ms ease all; }
+
+.input::placeholder {
+  color: var(--colors-font-highlight); }
+
+.input:focus {
+  background-color: var(---colors-gray-500);
+  outline: none; }
+
+.input__valid {
+  border: 1px solid var(--colors-success);
+  color: var(--colors-success); }
+
+.input__invalid {
+  border: 1px solid var(--colors-danger);
+  color: var(--colors-danger); }

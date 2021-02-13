@@ -1,0 +1,23 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+.heading__title {
+  padding-bottom: 10px;
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-snug);
+}
+.heading__title--thin {
+  font-weight: var(--font-weight-light);
+  padding-right: 10px;
+}
+.heading__title--bold {
+  font-weight: var(--font-weight-normal);
+  color: var(--colors-primary);
+}
+.heading__subtitle {
+  padding-bottom: 10px;
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-snug);
+  color: var(--colors-font-base);
+}
