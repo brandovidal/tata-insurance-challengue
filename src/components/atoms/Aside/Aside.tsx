@@ -7,6 +7,7 @@ import './Aside.scss'
 type AsideProps = {
   title?: string
   subtitle?: string
+  copy?: string
   listing?: ItemProps[]
 }
 
@@ -20,7 +21,7 @@ const shadow = {
   width: 'lg',
 }
 
-const Aside: React.FC<AsideProps> = ({ title, subtitle, listing }) => (
+const Aside: React.FC<AsideProps> = ({ title, subtitle, listing, copy }) => (
   <aside
     className="aside"
     style={{
@@ -42,7 +43,7 @@ const Aside: React.FC<AsideProps> = ({ title, subtitle, listing }) => (
           ))}
         </ul>
       </div>
-      <p className="aside__copy">&copy; 2021 RIMAC Seguros y Reaseguros</p>
+      <p className="aside__copy">{copy}</p>
     </div>
 
     <div className="aside__img">

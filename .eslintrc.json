@@ -12,6 +12,7 @@
   "plugins": ["react", "@typescript-eslint", "jest"],
   "env": {
     "browser": true,
+    "commonjs": true,
     "es6": true,
     "jest": true
   },
@@ -21,6 +22,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "createDefaultProgram": true,
     "ecmaFeatures": {
       "jsx": true
     },
