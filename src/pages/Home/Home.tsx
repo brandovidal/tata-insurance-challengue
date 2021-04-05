@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react'
-import { BrowserRouter as Router, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import { Aside, AsideProps } from '../../components/atoms/Aside/Aside'
 import Button from '../../components/atoms/Button'

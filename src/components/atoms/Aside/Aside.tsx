@@ -29,6 +29,7 @@ const Aside: React.FC<AsideProps> = ({ title, subtitle, listing, copy }) => (
       backgroundPosition: 'right bottom',
       backgroundSize: 'cover',
       background: '#2f80ed',
+      maxHeight: '95%',
     }}
   >
     <div className="aside__content">

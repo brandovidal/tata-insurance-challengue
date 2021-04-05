@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 import './Congratulation.scss'
 
-const Congratulation = () => (
+const Congratulation: React.FC<any> = () => (
   <main>
     <div className="congratulation">
       <Aside />

@@ -1,7 +1,7 @@
 .congratulation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh; }
+  height: 80vh; }
 
 .congratulation__section {
   display: flex;
